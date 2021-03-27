@@ -130,7 +130,7 @@ typedef struct {
 	Line *line;   /* screen */
 	Line *alt;    /* alternate screen */
 	#if SCROLLBACK_PATCH
-	Line hist[HISTSIZE]; /* history buffer */
+	Line hist[2000]; /* history buffer */
 	int histi;    /* history index */
 	int scr;      /* scroll back */
 	#endif // SCROLLBACK_PATCH
